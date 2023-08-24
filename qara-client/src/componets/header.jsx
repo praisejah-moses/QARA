@@ -8,6 +8,7 @@ export default function Header() {
             src={'/uniben-logo.png'}
             width={200}
             height={200}
+            style={{ width:'auto', height:'auto' }}
             alt="logo"
             priority
           />
