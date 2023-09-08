@@ -1,6 +1,6 @@
 import os
 import sys
-
+import openai
 
 
 import secret
@@ -10,10 +10,10 @@ from langchain.indexes import VectorstoreIndexCreator
 
 
 os.environ['OPENAI_API_KEY'] = secret.API_KEY
+def get_response(prompt):
+    query = prompt
 
-query = sys.argv[1]
+    loader = TextLoader('knowlege-base.txt')
+    index = VectorstoreIndexCreator().from_loaders([loader])
 
-loader = TextLoader('../data/knowlege-base.txt')
-index = VectorstoreIndexCreator().from_loaders([loader])
-
-print(index.query(query))
+    return(index.query(query))
