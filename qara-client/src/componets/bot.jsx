@@ -15,8 +15,8 @@ function Bot() {
                         />
                     </div>
                     <div className="chatbox__content--header">
-                        <h4 className="chatbox__heading--header">Chat support</h4>
-                        <p className="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                        <h4 className="chatbox__heading--header">Query Qara</h4>
+                        <p className="chatbox__description--header">Hi. My name is Qara. How can I help you?</p>
                     </div>
                 </div>
                 <div className="chatbox__messages">
@@ -31,9 +31,9 @@ function Bot() {
                 <button>
                     <Image
                     src={'/qara-logo.png'}
-                    width={100}
+                    width={50}
                     height={100}
-                    style={{ width:'50px', height:'50px' }}
+                    style={{ width:'35px', height:'35px' }}
                     alt="logo"
                 priority
                     />
